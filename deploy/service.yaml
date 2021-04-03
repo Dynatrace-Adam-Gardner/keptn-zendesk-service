@@ -29,6 +29,16 @@ spec:
                 secretKeyRef:
                   name: zendesk-details
                   key: zendesk-base-url
+            - name: ZENDESK_END_USER_EMAIL
+              valueFrom:
+                secretKeyRef:
+                  name: zendesk-details
+                  key: zendesk-end-user-email
+            - name: ZENDESK_API_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: zendesk-api-token
+                  key: zendesk-api-token
             - name: TICKET_FOR_PROBLEMS
               valueFrom:
                 secretKeyRef:
