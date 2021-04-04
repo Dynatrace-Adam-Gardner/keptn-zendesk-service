@@ -1,7 +1,7 @@
 # keptn-zendesk-service
 Keptn Notification Service for Zendesk
 
-> WORK IN PROGRESS. NOT READY FOR USE YET. CONTACT AUTHOR FOR MORE INFO.
+![image](https://user-images.githubusercontent.com/13639658/113499414-33e1dc00-9559-11eb-8973-c73d8ffd8390.png)
 
 ## Gather Required Details
 
