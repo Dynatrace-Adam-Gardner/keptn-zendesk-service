@@ -28,6 +28,8 @@ secret/zendesk-details created
 ```
 
 ## Deployment
+Images will be tagged corresponding to their supported Keptn version. Modify the image tag to match the version of Keptn you're running. For example, tag `0.8.0` is designed to work with Keptn `0.8.0`.
+
 Customise `deploy/service.yaml` then apply:
 ```
 kubectl apply -f deploy/service.yaml
