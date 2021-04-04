@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: zendesk-service
-          image: adamgardnerdt/zendesk-service:0.8.0
+          image: adamgardnerdt/keptn-zendesk-service:0.8.0
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
