@@ -7,7 +7,10 @@ Keptn Notification Service for Zendesk
 
 - Your zendesk base URL is `https://***.zendesk.com` WITHOUT trailing slash
 - You need to generate an API token. Do so at `https://***.zendesk.com/agent/admin/api/settings`
-- Your end user email is the user who will create tickets. Obviously this user must exist first
+- Your end user email is the user who will create tickets (The customer, NOT the agent). Add a new user here: `https://***.zendesk.com/agent/users/new`
+
+![image](https://user-images.githubusercontent.com/13639658/113497995-4ace0180-954c-11eb-9cbd-70984a2f34e5.png)
+
 
 ## Create Secret
 ```
