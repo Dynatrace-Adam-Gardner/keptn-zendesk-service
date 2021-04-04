@@ -39,12 +39,12 @@ spec:
                 secretKeyRef:
                   name: zendesk-api-token
                   key: zendesk-api-token
-            - name: TICKET_FOR_PROBLEMS
+            - name: ZENDESK_TICKET_FOR_PROBLEMS
               valueFrom:
                 secretKeyRef:
                   name: zendesk-details
                   key: zendesk-create-ticket-for-problems
-            - name: TICKET_FOR_EVALUATIONS
+            - name: ZENDESK_TICKET_FOR_EVALUATIONS
               valueFrom:
                 secretKeyRef:
                   name: zendesk-details
