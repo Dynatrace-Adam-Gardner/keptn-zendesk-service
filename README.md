@@ -1,7 +1,8 @@
-# keptn-zendesk-service
-Keptn Notification Service for Zendesk
+# Keptn Zendesk Service
 
-![image](https://user-images.githubusercontent.com/13639658/113499414-33e1dc00-9559-11eb-8973-c73d8ffd8390.png)
+![image](https://user-images.githubusercontent.com/13639658/113554176-3e28d680-963c-11eb-8851-a49aeb66aa7a.png)
+
+This service provides an integration between Keptn and Zendesk. Quality Evaluations and Remediation Actions will automatically create fully tagged tickets in Zendesk.
 
 ## Gather Required Details
 
