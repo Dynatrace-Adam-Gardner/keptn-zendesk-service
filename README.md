@@ -48,6 +48,13 @@ Logs can be shown using `kubectl logs` and specifying the `zendesk-service` cont
 kubectl logs -n keptn -l app=zendesk-service -c zendesk-service
 ```
 
+## Uninstall
+
+```
+kubectl delete -f deploy/service.yaml
+kubectl delete secret -n keptn zendesk-service
+```
+
 ## Compatability Matrix
 
 | Keptn Version                                                      | Zendesk Service Tag                                                            |
