@@ -59,6 +59,7 @@ kubectl delete secret -n keptn zendesk-service
 
 | Keptn Version                                                      | Zendesk Service Tag                                                            |
 |--------------------------------------------------------------------|--------------------------------------------------------------------------------|
+|    [0.8.2](https://github.com/keptn/keptn/releases/tag/0.8.2)      |  [0.8.2](https://hub.docker.com/r/adamgardnerdt/keptn-zendesk-service/tags)    |
 |    [0.8.1](https://github.com/keptn/keptn/releases/tag/0.8.1)      |  [0.8.1](https://hub.docker.com/r/adamgardnerdt/keptn-zendesk-service/tags)    |
 |    [0.8.0](https://github.com/keptn/keptn/releases/tag/0.8.0)      |  [0.8.0](https://hub.docker.com/r/adamgardnerdt/keptn-zendesk-service/tags)    |
 
