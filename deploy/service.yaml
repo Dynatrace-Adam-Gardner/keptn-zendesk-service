@@ -82,7 +82,7 @@ spec:
             - name: ZENDESK_API_TOKEN
               valueFrom:
                 secretKeyRef:
-                  name: zendesk-api-token
+                  name: zendesk-details
                   key: zendesk-api-token
             - name: ZENDESK_TICKET_FOR_PROBLEMS
               valueFrom:
