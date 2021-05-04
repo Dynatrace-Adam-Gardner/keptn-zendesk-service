@@ -1,3 +1,45 @@
+# ServiceAccount, Role, RoleBinding
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: zendesk-service
+  namespace: keptn
+  labels:
+    app: keptn
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: zendesk-service-read-secret
+  namespace: keptn
+  labels:
+    app: keptn
+rules:
+  - apiGroups:
+      - ""
+    resources:
+      - secrets
+    verbs:
+      - get
+    resourceNames:
+      - "dynatrace"
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: zendesk-service-read-secret
+  namespace: keptn
+  labels:
+    app: keptn
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: zendesk-service-read-secret
+subjects:
+  - kind: ServiceAccount
+    name: zendesk-service
+    namespace: keptn
 ---
 # Deployment of the zendesk-service
 apiVersion: apps/v1
@@ -5,6 +47,8 @@ kind: Deployment
 metadata:
   name: zendesk-service
   namespace: keptn
+  labels:
+    run: zendesk-service
 spec:
   selector:
     matchLabels:
@@ -13,7 +57,7 @@ spec:
   template:
     metadata:
       labels:
-        run: zendesk-service
+        app: zendesk-service
     spec:
       containers:
         - name: zendesk-service
@@ -95,7 +139,7 @@ spec:
               value: 'sh.keptn.event.evaluation.finished,sh.keptn.event.remediation.finished'
             - name: PUBSUB_RECIPIENT
               value: '127.0.0.1'
-      serviceAccountName: keptn-default
+      serviceAccountName: zendesk-service
 ---
 # Expose zendesk-service via Port 8080 within the cluster
 apiVersion: v1
@@ -104,10 +148,10 @@ metadata:
   name: zendesk-service
   namespace: keptn
   labels:
-    run: zendesk-service
+    app: zendesk-service
 spec:
   ports:
     - port: 8080
       protocol: TCP
   selector:
-    run: zendesk-service
+    app: zendesk-service
