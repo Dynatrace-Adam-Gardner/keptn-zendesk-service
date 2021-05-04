@@ -35,6 +35,12 @@ Customise `deploy/service.yaml` then apply:
 ```
 kubectl apply -f deploy/service.yaml
 ```
+## Debugging
+Logs can be shown using `kubectl logs` and specifying the `zendesk-service` container:
+
+```
+kubectl logs -n keptn -l app=zendesk-service -c zendesk-service
+```
 
 ## Compatability Matrix
 
