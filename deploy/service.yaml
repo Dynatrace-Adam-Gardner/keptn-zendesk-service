@@ -49,11 +49,11 @@ metadata:
   name: zendesk-service
   namespace: keptn
   labels:
-    run: zendesk-service
+    app: zendesk-service
 spec:
   selector:
     matchLabels:
-      run: zendesk-service
+      app: zendesk-service
   replicas: 1
   template:
     metadata:
