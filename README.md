@@ -4,6 +4,10 @@
 
 This service provides an integration between Keptn and Zendesk. Quality Evaluations and Remediation Actions will automatically create fully tagged tickets in Zendesk.
 
+By default, this service [listens](https://github.com/Dynatrace-Adam-Gardner/keptn-zendesk-service/blob/3bf81ca9ca0f7376ef8beab32edfa48ff1c8ea85/deploy/service.yaml#L140) for the following events:
+- `sh.keptn.event.evaluation.finished`
+- `sh.keptn.event.remediation.finished`
+
 ## Gather Required Details
 
 - Your zendesk base URL is `https://***.zendesk.com` WITHOUT trailing slash
