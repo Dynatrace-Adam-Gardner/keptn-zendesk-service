@@ -1,4 +1,6 @@
 # Keptn Zendesk Service
+## ⚠️This repository is now deprecated and users should replace this service with [these instructions](https://artifacthub.io/packages/keptn/keptn-integrations/zendesk-integration).
+### Any questions should be directed to [keptn slack](https://slack.keptn.sh/)
 
 ![image](https://user-images.githubusercontent.com/13639658/113554176-3e28d680-963c-11eb-8851-a49aeb66aa7a.png)
 
